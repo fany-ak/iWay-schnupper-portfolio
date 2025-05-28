@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7e3f5;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  height: 20%;
+}
+
+.my-fancy-text {
+  color: pink;
+  font-weight: 600;
+}
+
+.my-lil-chub {
+  font-weight: 700;
+}
+
+.my-text-background {
+  background-color: #ca1293;
+  padding: 5px;
+}
+
+
+.facts {
+  margin: 5px;
+}
+
+hr {
+  margin: 0;
+}
+
+
+.my-box {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-content: center;
+  border: 2px solid #b308e7;
+  background-color: #e7c7e2;
+  overflow: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.my-options {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-content: center;
+  border: 2px solid #b308e7;
+  background-color: #e7c7e2;
+  overflow: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.my-container {
+  /*padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;*/
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-special {
+  font-style: italic;
+  font-family: cursive;
+  font-size: x-large;
+}
+
+.dark-mode {
+  background-color: black;
+  color: #ffffff;
+}
+
+.number-box {
+
+  text-align: center;
+  align-content: center;
+  border-radius: 100px;
+  border-width: 5px;
+  margin: 5px;
+  width: 60px;
+  height: 60px;
+  border-color: #f319a0;
+}
+
+.my-button {
+  background-color: #ffffff;
+  text-align: center;
+  align-content: center;
+  text-align: center;
+  align-content: center;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+
+.my-angel {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 250px;
+  height: 180px;
+  border-radius: 100px;
+}
+
+.my-contact {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  bottom: 0px;
+  /* justify-content: space-between; */
+}

@@ -1,0 +1,46 @@
+# Django-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3
+*.sqlite3
+/media/
+/static/
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*~ 
+
+# Node.js dependencies (if applicable)
+node_modules/
+npm-debug.log
+
+# Build artifacts
+dist/
+build/
+
+# JavaScript-related
+*.map
+
+# HTML and CSS-related
+*.log
+*.cache
+
+# Compiled styles (if using SCSS/SASS)
+*.css.map
+
+# Coverage reports
+coverage/
+*.coverage
+
+# Misc
+.DS_Store
+Thumbs.db
