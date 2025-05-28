@@ -1,0 +1,33 @@
+services:
+  frontend:
+      container_name: frontend
+      image: nginx:latest
+      ports:
+        - "10500:80"
+      volumes:
+        - type: bind
+          source: ${PWD}/docker/frontend/default.conf
+          target: /etc/nginx/conf.d/default.conf
+        - ${PWD}/backend/static:/www/static
+        - ${PWD}/frontend:/var/www/html
+      networks:
+      - portfolio-int
+    
+  backend:
+    restart: always
+    container_name: backend
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    volumes:
+      - ./backend:/app
+      - ${PWD}/backend/static:/www/static
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=backend.settings
+    networks:
+    - portfolio-int
+
+networks:
+  portfolio-int:
